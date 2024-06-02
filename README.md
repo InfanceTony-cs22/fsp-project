@@ -1,7 +1,7 @@
 # File System Simulator in Python
 
 ## Overview
-- This repository contains a Python implementation of a File System Simulator, which replicates essential functionalities of a real-world file system. It serves as an educational tool for understanding file system organization and management principles. Users can perform operations akin to those found in operating systems, gaining practical experience in managing digital assets.
+This repository contains a Python implementation of a File System Simulator, which replicates essential functionalities of a real-world file system. It serves as an educational tool for understanding file system organization and management principles. Users can perform operations akin to those found in operating systems, gaining practical experience in managing digital assets.
 
 ## Features
 - **File Management**
@@ -36,19 +36,6 @@
 - **Functionality**
   - Provides an intuitive interface for performing file system operations such as creating projects, files, directories, and managing their contents.
 
-## Example Usage
-```python
-fs = FileSystem()
-fs.create_project('Project1')
-fs.create_file('/Project1/file1.txt', 'Hello, Project 1!')
-fs.read_file('/Project1/file1.txt')
-fs.write_file('/Project1/file1.txt', 'Updated Content for Project 1')
-fs.read_file('/Project1/file1.txt')
-fs.list_project_contents('Project1')
-fs.delete_file('/Project1/file1.txt')
-fs.list_project_contents('Project1')
-fs.list_projects()
-
 ## Dependencies
 - Python 3.x
 - No external libraries beyond standard Python libraries are required.
@@ -73,4 +60,3 @@ fs.list_projects()
 
 ## Conclusion
 This project demonstrates a basic implementation of a file system simulator in Python, providing essential functionalities for managing files, directories, and projects. It serves as an educational tool for understanding fundamental concepts in operating systems and can be expanded for more advanced simulations and applications.
-
