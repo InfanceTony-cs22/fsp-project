@@ -1,0 +1,110 @@
+File System Simulator with GUI
+Overview
+This project is a file system simulator with a graphical user interface (GUI) developed using Python's tkinter library. It provides an intuitive interface for managing projects and files, allowing users to perform operations such as creating projects, creating and managing files within projects, and displaying the contents of projects.
+
+Table of Contents
+Introduction
+Requirements
+Installation
+Usage
+Class and Method Descriptions
+FileSystem Class
+FileSystemGUI Class
+Example Usage
+Future Enhancements
+Conclusion
+Introduction
+The File System Simulator project provides a simplified simulation of a file system where users can:
+
+Create and list projects (directories).
+Create, read, write, and delete files within projects.
+View the contents of projects.
+Requirements
+Python 3.x
+tkinter library (comes pre-installed with Python)
+Installation
+No specific installation steps are required other than having Python installed. The tkinter library is included with standard Python distributions.
+
+Usage
+To run the project, execute the script file_system_gui.py. This will launch the GUI, which allows users to interact with the file system.
+
+GUI Components
+Project Name Field: Input field for the project name.
+File Name Field: Input field for the file name.
+File Content Area: Text area for entering or displaying file content.
+Output Text Area: Text area for displaying results and messages from operations.
+Buttons: Buttons for performing operations such as creating projects, listing projects, creating files, reading files, writing files, deleting files, and listing project contents.
+Buttons and Their Functions
+Create Project: Creates a new project with the name specified in the Project Name field.
+List Projects: Displays a list of all existing projects.
+Create File: Creates a new file within the specified project with the content provided.
+Read File: Reads and displays the content of the specified file.
+Write File: Writes the content from the File Content area to the specified file.
+Delete File: Deletes the specified file from the project.
+List Project Contents: Displays all files and directories within the specified project.
+Class and Method Descriptions
+FileSystem Class
+The FileSystem class manages the core functionalities of the file system.
+
+Methods
+__init__(self): Initializes the file system with a root directory.
+create_file(self, path, content=''): Creates a new file at the given path with optional content.
+delete_file(self, path): Deletes the file at the given path.
+read_file(self, path): Reads and returns the content of the file at the given path.
+write_file(self, path, content): Writes content to the file at the given path.
+create_directory(self, path): Creates a new directory at the given path.
+list_directory(self, path): Lists all items in the given directory.
+create_project(self, project_name): Creates a new project (directory) with the specified name.
+list_projects(self): Lists all existing projects.
+list_project_contents(self, project_name): Lists all contents of the specified project.
+FileSystemGUI Class
+The FileSystemGUI class manages the graphical user interface.
+
+Methods
+__init__(self, root, fs): Initializes the GUI with the given root window and file system instance.
+create_project(self): Handles the creation of a new project.
+list_projects(self): Displays all projects.
+create_file(self): Creates a new file within a project.
+read_file(self): Displays the content of a file.
+write_file(self): Writes content to a file.
+delete_file(self): Deletes a file.
+list_project_contents(self): Displays all contents of a project.
+Example Usage
+Create a Project:
+
+Enter the project name in the Project Name field.
+Click "Create Project".
+List Projects:
+
+Click "List Projects" to display all projects.
+Create a File:
+
+Enter the project name in the Project Name field.
+Enter the file name in the File Name field.
+Enter the content in the File Content area.
+Click "Create File".
+Read File:
+
+Enter the project name and file name in the respective fields.
+Click "Read File" to display the file content.
+Write File:
+
+Enter the project name and file name in the respective fields.
+Enter the new content in the File Content area.
+Click "Write File".
+Delete File:
+
+Enter the project name and file name in the respective fields.
+Click "Delete File".
+List Project Contents:
+
+Enter the project name in the Project Name field.
+Click "List Project Contents".
+Future Enhancements
+Nested Directories: Add support for creating and managing nested directories within projects.
+File Renaming: Implement functionality to rename files.
+Error Handling: Improve error handling for invalid inputs.
+Enhanced GUI: Add more features and improve the layout of the GUI.
+Conclusion
+The File System Simulator with GUI provides a basic yet effective tool for managing projects and files. It serves as a foundation for further enhancements and can be expanded with additional features as needed. The use of tkinter for the GUI makes it accessible and easy to use for a wide range of users.
+
