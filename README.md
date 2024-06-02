@@ -60,3 +60,8 @@ This repository contains a Python implementation of a File System Simulator, whi
 
 ## Conclusion
 This project demonstrates a basic implementation of a file system simulator in Python, providing essential functionalities for managing files, directories, and projects. It serves as an educational tool for understanding fundamental concepts in operating systems and can be expanded for more advanced simulations and applications.
+
+## Contributors
+
+- Infance Tony ([@InfanceTony-cs22](https://github.com/InfanceTony-cs22))
+
