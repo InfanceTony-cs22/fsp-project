@@ -48,3 +48,29 @@ fs.list_project_contents('Project1')
 fs.delete_file('/Project1/file1.txt')
 fs.list_project_contents('Project1')
 fs.list_projects()
+
+## Dependencies
+- Python 3.x
+- No external libraries beyond standard Python libraries are required.
+
+## Future Enhancements
+- Support for additional file system operations such as copy, move, and rename.
+- Enhanced error handling and input validation mechanisms.
+- Integration with larger systems for more comprehensive file system simulations.
+
+## Usage
+1. **Setting Up**
+   - Clone the repository and ensure Python 3.x is installed.
+   
+2. **Creating Projects and Files**
+   - Use `create_project` and `create_file` methods to organize and populate the file system.
+   
+3. **Performing Operations**
+   - Perform read, write, delete, and list operations on files and directories.
+   
+4. **Using GUI**
+   - Optionally use `FileSystemGUI` class for a graphical interface to interact with the simulator.
+
+## Conclusion
+This project demonstrates a basic implementation of a file system simulator in Python, providing essential functionalities for managing files, directories, and projects. It serves as an educational tool for understanding fundamental concepts in operating systems and can be expanded for more advanced simulations and applications.
+
